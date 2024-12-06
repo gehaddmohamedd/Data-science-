@@ -8,7 +8,7 @@ Create table students(ID INT PRIMARY KEY, First_Name VARCHAR(20) NOT NULL, Last_
 Drop table students; 
 --DML
 Insert into students Values('123','Ahmed','Ali','Downtown','Cairo','1995-01-01');
-Update table students SET Address='Garden City' where Last_name='Ahmed';
+Update students SET Address='Garden City' where Last_name='Ahmed';
 --Transaction control
 BEGIN Transaction;
 Delete from students where city = 'Cairo';
