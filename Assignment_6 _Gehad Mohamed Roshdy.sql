@@ -1,0 +1,3 @@
+Select employee_id,last_name,salary from employees where (salary between 2000 AND 5000) AND (manager_id NOT IN (100,101));
+Select e.first_name,e.last_name, d.department_name from employees e Inner join departments d on e.department_id=d.department_id order by department_name asc;
+Select department_id, count(employee_id) as numberofemployees, avg (salary) as avgsalary from employees group by department_id;
